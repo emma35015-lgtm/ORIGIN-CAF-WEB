@@ -766,3 +766,110 @@
   margin-top: 36px;
   letter-spacing: 0.04em;
 }
+
+/* ── Mobile / iPhone ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Tap targets */
+  .landing-a button,
+  .landing-a a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* Nav: logo + actions only, no center links */
+  .landing-a .la-nav {
+    grid-template-columns: 1fr auto;
+    padding: 12px 18px;
+  }
+  .landing-a .la-nav-links { display: none; }
+  .landing-a .la-nav-tagline { display: none; }
+  .landing-a .la-nav-logo { font-size: 16px; }
+
+  /* Hero shared */
+  .landing-a .la-hero { padding: 28px 20px 44px; }
+  .landing-a .la-hero-foot {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+    gap: 18px;
+  }
+  .landing-a .la-hero-foot p { font-size: 16px; }
+  .landing-a .la-hero-cta {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  /* Hero: marquee — scale ORIGIN. to fit */
+  .landing-a .la-mega { font-size: clamp(64px, 16vw, 300px); }
+  .landing-a .la-hero-float { font-size: 12px; padding: 7px 11px; }
+  .landing-a .la-hero-float-1 { top: 32px; left: 2%; }
+  .landing-a .la-hero-float-2 { top: 32px; right: 2%; }
+  .landing-a .la-hero-float-3 { bottom: 90px; left: 3%; font-size: 12px; }
+
+  /* Hero: clean */
+  .landing-a .la-hero-clean { padding: 44px 20px 56px; }
+  .landing-a .la-clean-title { font-size: clamp(80px, 22vw, 440px); }
+  .landing-a .la-clean-foot {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+    gap: 18px;
+  }
+  .landing-a .la-clean-foot p { font-size: 16px; }
+
+  /* Hero: jumbo */
+  .landing-a .la-jumbo-line { font-size: clamp(52px, 14vw, 200px); }
+  .landing-a .la-jumbo-bag { width: 120px; height: 190px; }
+
+  /* Marquee strip */
+  .landing-a .la-marquee-track { font-size: 20px; }
+
+  /* Stickers */
+  .landing-a .la-stickers { padding: 28px 16px 36px; gap: 10px; }
+  .landing-a .la-sticker { font-size: 14px; padding: 9px 14px; }
+  .landing-a .la-sticker-2 { font-size: 15px; padding: 10px 18px; }
+
+  /* Products */
+  .landing-a .la-products { padding: 48px 16px 60px; border-radius: 24px 24px 0 0; }
+  .landing-a .la-products-hd { margin-bottom: 28px; }
+  .landing-a .la-products-title { font-size: clamp(52px, 14vw, 120px); }
+  .landing-a .la-products-hd p { font-size: 15px; }
+  .landing-a .la-products-grid { grid-template-columns: 1fr; gap: 16px; }
+  .landing-a .la-product h3 { font-size: 30px; }
+  .landing-a .la-product-price { font-size: 26px; }
+  .landing-a .la-product-cta { padding: 14px 18px; font-size: 16px; min-height: 48px; }
+  .landing-a .la-products-foot { margin-top: 28px; }
+  .landing-a .la-products-foot p { font-size: 17px; }
+
+  /* Brand */
+  .landing-a .la-brand {
+    grid-template-columns: 1fr;
+    padding: 48px 20px 52px;
+    gap: 24px;
+  }
+  .landing-a .la-brand-img-snakes { padding: 0; }
+  .landing-a .la-brand-img-snakes img { max-height: 320px; }
+  .landing-a .la-brand-text { max-width: 100%; }
+  .landing-a .la-brand-text h2 { font-size: clamp(52px, 14vw, 110px); margin: 10px 0 16px; }
+  .landing-a .la-brand-text p { font-size: 16px; }
+  .landing-a .la-brand-stats { gap: 16px; margin-top: 20px; }
+  .landing-a .la-brand-stats strong { font-size: 38px; }
+
+  /* Footer */
+  .landing-a .la-footer { padding: 36px 20px 44px; }
+  .landing-a .la-foot-mega {
+    font-size: clamp(72px, 20vw, 280px);
+    margin-bottom: 16px;
+  }
+  .landing-a .la-foot-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 16px;
+  }
+  .landing-a .la-foot-base {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    margin-top: 24px;
+  }
+}
