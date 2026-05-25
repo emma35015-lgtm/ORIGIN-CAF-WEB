@@ -802,7 +802,7 @@
   }
 
   /* Hero: marquee — ORIGIN. de lado a lado */
-  .landing-a .la-mega { font-size: clamp(88px, 25vw, 300px); }
+  .landing-a .la-mega { font-size: min(32vw, 300px); letter-spacing: -0.04em; }
   .landing-a .la-hero-float { font-size: 12px; padding: 7px 11px; }
   .landing-a .la-hero-float-1 { top: 32px; left: 2%; }
   .landing-a .la-hero-float-2 { top: 32px; right: 2%; }
