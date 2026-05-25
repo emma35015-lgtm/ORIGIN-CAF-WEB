@@ -1,6 +1,11 @@
 // Shared product data + helpers
 // Real sizes: 250g, 400g, 1kg. Available in Grano (whole bean / foil) or Molido (ground / matte gray).
 
+// Shared flavor profile — same for all bag sizes
+const SHARED_NOTES = ['Piloncillo', 'Almendra', 'Chocolate'];
+const SHARED_AROMA  = 'Medio-alto, con notas de piloncillo, almendra y chocolate.';
+const SHARED_RETRO  = 'Duradero, con toques de caramelo y nuez tostada.';
+
 window.PRODUCTS = [
   {
     id: 'descubrir',
@@ -8,8 +13,9 @@ window.PRODUCTS = [
     size: '250g',
     price: 130,
     intensity: 'Suave',
-    intensityLevel: 3,
-    notes: ['Chocolate', 'Almendra', 'Cítrico suave'],
+    notes: SHARED_NOTES,
+    aroma: SHARED_AROMA,
+    retrogusto: SHARED_RETRO,
     tag: 'NUEVO AQUÍ',
     eyebrow: '01 · La probadita',
     blurb: 'Bolsa chica para empezar el rito. Rinde unos días — suficiente para enamorarte. O para regalar y quedar bien.',
@@ -23,8 +29,9 @@ window.PRODUCTS = [
     size: '400g',
     price: 240,
     intensity: 'Medio',
-    intensityLevel: 3,
-    notes: ['Cacao', 'Nuez tostada', 'Miel'],
+    notes: SHARED_NOTES,
+    aroma: SHARED_AROMA,
+    retrogusto: SHARED_RETRO,
     tag: 'MÁS VENDIDA',
     eyebrow: '02 · El default',
     blurb: 'La cantidad justa para quien no perdona su café cada mañana. Una bolsa, dos semanas, cero excusas.',
@@ -38,8 +45,9 @@ window.PRODUCTS = [
     size: '1kg',
     price: 415,
     intensity: 'Intenso',
-    intensityLevel: 3,
-    notes: ['Cacao oscuro', 'Especias', 'Panela'],
+    notes: SHARED_NOTES,
+    aroma: SHARED_AROMA,
+    retrogusto: SHARED_RETRO,
     tag: 'SIN MIEDO',
     eyebrow: '03 · El kilo',
     blurb: 'Para quienes lo toman a diario o lo comparten en casa, oficina o cafetería. El kilo de los devotos.',

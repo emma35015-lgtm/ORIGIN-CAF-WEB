@@ -2,7 +2,7 @@
    Theme tokens come from inline style on each surface. */
 
 .shop-scrim {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(20, 10, 5, 0.45);
   backdrop-filter: blur(4px);
@@ -101,6 +101,17 @@
   border: 1px solid;
   letter-spacing: 0.02em;
 }
+.shop-flavor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+.shop-flavor strong { font-weight: 700; display: block; }
+
 .shop-field-label {
   font-size: 11px;
   letter-spacing: 0.14em;
@@ -434,7 +445,7 @@
 
 /* ── Toast ───────────────────────────────────────────────────── */
 .shop-toast {
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);

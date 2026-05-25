@@ -141,6 +141,10 @@ window.ProductModal = function ProductModal({ shop, theme }) {
                 <span key={n} className="shop-chip" style={{ borderColor: theme.text }}>{n}</span>
               ))}
             </div>
+            <div className="shop-flavor">
+              <div><strong>Fragancia y Aroma</strong> {product.aroma}</div>
+              <div><strong>Retrogusto</strong> {product.retrogusto}</div>
+            </div>
 
             <div className="shop-field-label">Presentación</div>
             <div className="shop-grind">
