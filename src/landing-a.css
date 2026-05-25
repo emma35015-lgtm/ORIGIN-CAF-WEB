@@ -786,8 +786,8 @@
   .landing-a .la-nav-tagline { display: none; }
   .landing-a .la-nav-logo { font-size: 16px; }
 
-  /* Hero shared */
-  .landing-a .la-hero { padding: 28px 20px 44px; }
+  /* Hero shared — reduce horizontal padding so title respira */
+  .landing-a .la-hero { padding: 28px 10px 44px; }
   .landing-a .la-hero-foot {
     grid-template-columns: 1fr;
     margin-top: 24px;
@@ -801,8 +801,8 @@
     padding: 16px 24px;
   }
 
-  /* Hero: marquee — scale ORIGIN. to fit */
-  .landing-a .la-mega { font-size: clamp(64px, 16vw, 300px); }
+  /* Hero: marquee — ORIGIN. casi de lado a lado */
+  .landing-a .la-mega { font-size: clamp(72px, 21.5vw, 300px); }
   .landing-a .la-hero-float { font-size: 12px; padding: 7px 11px; }
   .landing-a .la-hero-float-1 { top: 32px; left: 2%; }
   .landing-a .la-hero-float-2 { top: 32px; right: 2%; }
